@@ -98,18 +98,18 @@ const EQUIPES = [
   { cap: "Rodolphe LE BLEVENEC", membres: ["Olivier LEVY", "Inès LACARRIERE", "Léane GOURCY"], salle: "Salle du Live, 5ème" },
   { cap: "Thomas VOISIN", membres: ["Antoine BRIQUET", "Matthis HUET", "Léa CRINON"], salle: "Salle Passerelle" },
   { cap: "Nils VERVAET", membres: ["Leontine BERTHOME", "Hugues DUPROZ", "Alina KSENDZENKO", "Soline BIANQUIS"], salle: "Salle Passerelle" },
-  { cap: "Mathias VIVIER", membres: ["Rayan RAHMANI-MERAITS", "Enzo GRANO", "Thomas BIGOT", "Chloé MARTIN"], salle: "Petite salle WeFiiT" },
+  { cap: "Enzo GRANO", membres: ["Rayan RAHMANI-MERAITS", "Thomas BIGOT", "Chloé MARTIN"], salle: "Petite salle WeFiiT" },
   { cap: "Erwan SAVOYEN", membres: ["Cédric LOZAC'H", "Grégoire DELÉVACQUE", "Soukaina SBAI"], salle: "Espaces communs 6ème" },
   { cap: "Sarah THIEBAUT", membres: ["Christopher WOODS", "Mélanie HENG", "Gaëlle BRICAUD-NG SUI WA", "Amaury SERVIN"], salle: "Espaces communs 6ème" },
   { cap: "Pauline AGACHE", membres: ["Marwan ZIDANE", "Alice GAILLARD", "Hamza BITER", "Iris HEDOUIN"], salle: "Espaces communs 6ème" },
-  { cap: "Delphine RINGUENET", membres: ["Pierre CHAMOREAU", "Marthe ORTOLO", "Morgane KRAU", "François Xavier CAPELLE"], salle: "Salle Jet" },
-  { cap: "Emma COLOMBAT", membres: ["Alexis ROBERT", "Alice MAUZ", "Camille LOPEZ", "Paul VALTON"], salle: "Salle Moonraker" },
-  { cap: "Alice GUERIN", membres: ["Adrien SUBITTE", "Agathe LECOCQ", "Martin BOUZID", "Pauline FAUVEL"], salle: "Salle Viper Mark" },
-  { cap: "Alice REVEREND", membres: ["Pauline ROBIAL", "Axel ALIZIER", "Camille CLAUDE", "Thomas LAUDET"], salle: "Salle Hyperion" },
-  { cap: "Alain PERRONE", membres: ["Mailis BONHOMMÉ", "Gabriel DIAS COSTA", "Adel BENDJEBBAR"], salle: "Salle Orbit" },
-  { cap: "Baptiste CLENET", membres: ["Victor NIORE", "Syrine BOURICHA", "Nathan THOMAS"], salle: "Salle Galactica" },
-  { cap: "Adrien-Ismaël HENRIQUES", membres: ["Laura CABANILLAS NAVARRO", "Axelle TORTAI", "Pauline MASSON"], salle: "Salle Prometheus" },
-  { cap: "Corentin BARCZYK", membres: ["Marius ROUSSEL", "Anne-Claire GAILLARD", "Elise PEREZ Y LANDAZURI"], salle: "Salle Eltrium" }
+  { cap: "Delphine RINGUENET", membres: ["Pierre CHAMOREAU", "Marthe ORTOLO", "Morgane KRAU", "François Xavier CAPELLE"], salle: "Salle Jet, 3ème étage" },
+  { cap: "Emma COLOMBAT", membres: ["Alexis ROBERT", "Alice MAUZ", "Camille LOPEZ", "Paul VALTON"], salle: "Salle Moonraker, 2ème étage" },
+  { cap: "Alice GUERIN", membres: ["Adrien SUBITTE", "Agathe LECOCQ", "Martin BOUZID", "Pauline FAUVEL"], salle: "Salle Viper Mark, 7ème étage" },
+  { cap: "Alice REVEREND", membres: ["Pauline ROBIAL", "Axel ALIZIER", "Camille CLAUDE", "Thomas LAUDET"], salle: "Salle Hyperion, 7ème étage" },
+  { cap: "Alain PERRONE", membres: ["Mailis BONHOMMÉ", "Gabriel DIAS COSTA", "Adel BENDJEBBAR"], salle: "Salle Orbit, 3ème étage" },
+  { cap: "Baptiste CLENET", membres: ["Victor NIORE", "Syrine BOURICHA", "Nathan THOMAS"], salle: "Salle Galactica, 7ème étage" },
+  { cap: "Adrien-Ismaël HENRIQUES", membres: ["Laura CABANILLAS NAVARRO", "Axelle TORTAI", "Pauline MASSON"], salle: "Salle Prometheus, 6ème étage" },
+  { cap: "Corentin BARCZYK", membres: ["Marius ROUSSEL", "Anne-Claire GAILLARD", "Elise PEREZ Y LANDAZURI"], salle: "Salle Eltrium, 6ème étage" }
 ];
 
 const RAISONS = [
