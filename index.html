@@ -358,9 +358,10 @@
     min-height: clamp(4.5rem, 10vw, 6rem);
   }
   .hotline-num {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 16px;
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 14px;
+    flex-wrap: nowrap; white-space: nowrap;
     font-family: 'Publica Play', sans-serif; font-weight: 400;
-    font-size: clamp(2.2rem, 6vw, 3.6rem); letter-spacing: 0.02em; color: var(--marine);
+    font-size: clamp(1.5rem, 7vw, 3.6rem); letter-spacing: 0.02em; color: var(--marine);
     text-decoration: none;
     opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease;
     pointer-events: none;
