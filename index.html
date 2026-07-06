@@ -358,7 +358,7 @@
     min-height: clamp(4.5rem, 10vw, 6rem);
   }
   .hotline-num {
-    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: 16px;
     font-family: 'Publica Play', sans-serif; font-weight: 400;
     font-size: clamp(2.2rem, 6vw, 3.6rem); letter-spacing: 0.02em; color: var(--marine);
     text-decoration: none;
@@ -366,6 +366,7 @@
     pointer-events: none;
   }
   .hotline-num.actif { opacity: 1; transform: translateY(0); pointer-events: auto; }
+  .hotline-meme { height: 1.5em; width: auto; flex: none; }
   .hotline-num:hover { color: var(--orange); }
   .hotline-points { display: flex; gap: 9px; justify-content: center; margin-top: 28px; }
   .hotline-points .point { background: rgba(0,40,130,0.16); }
@@ -861,8 +862,12 @@
 
   HOTLINE.forEach(function (numero, i) {
     const href = numero.indexOf("[à compléter") === 0 ? "#" : "tel:" + numero.replace(/\s+/g, "");
+    // Petit clin d'oeil : un mème apparaît à côté d'un numéro précis (fade géré par .actif)
+    const meme = numero.replace(/\s+/g, "") === "0676739454"
+      ? '<img class="hotline-meme" src="photos/hotline-meme.png" alt="" aria-hidden="true">'
+      : "";
     hotlineCarrousel.insertAdjacentHTML("beforeend",
-      '<a class="hotline-num" href="' + href + '">' + numero + "</a>");
+      '<a class="hotline-num" href="' + href + '">' + meme + numero + "</a>");
     const bouton = document.createElement("button");
     bouton.className = "point";
     bouton.setAttribute("aria-label", "Voir le numéro " + (i + 1));
