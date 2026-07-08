@@ -888,37 +888,27 @@
   }, { threshold: 0.1 });
   document.querySelectorAll(".reveal").forEach(function (el) { io.observe(el); });
 
-  // ===== Compte à rebours de 1h20, déclenché à l'apparition de la section =====
+  // ===== Compte à rebours jusqu'au jeudi 9 juillet 2026 à 17h50 (heure de Paris) =====
   const chrono = document.getElementById("chrono");
-  const ioChrono = new IntersectionObserver(function (entries) {
-    entries.forEach(function (en) {
-      if (!en.isIntersecting) { return; }
-      ioChrono.unobserve(en.target);
-      demarrerChrono(80 * 60);
-    });
-  }, { threshold: 0.4 });
-  ioChrono.observe(chrono);
+  const CIBLE = new Date("2026-07-09T17:50:00+02:00").getTime();
 
-  function demarrerChrono(secondesRestantes) {
-    afficherChrono(secondesRestantes);
-    const intervalle = setInterval(function () {
-      secondesRestantes -= 1;
-      afficherChrono(secondesRestantes);
-      if (secondesRestantes <= 0) {
-        clearInterval(intervalle);
-        chrono.classList.add("termine");
-      }
-    }, 1000);
+  function tickChrono() {
+    const restant = Math.floor((CIBLE - Date.now()) / 1000);
+    afficherChrono(restant);
+    if (restant <= 0) {
+      clearInterval(intervalleChrono);
+      chrono.classList.add("termine");
+    }
   }
+  tickChrono();
+  const intervalleChrono = setInterval(tickChrono, 1000);
 
   function afficherChrono(secondes) {
     const s = Math.max(secondes, 0);
-    const heures = Math.floor(s / 3600);
+    const heures = String(Math.floor(s / 3600)).padStart(2, "0");
     const min = String(Math.floor((s % 3600) / 60)).padStart(2, "0");
     const sec = String(s % 60).padStart(2, "0");
-    chrono.textContent = heures > 0
-      ? String(heures).padStart(2, "0") + ":" + min + ":" + sec
-      : min + ":" + sec;
+    chrono.textContent = heures + ":" + min + ":" + sec;
   }
 
   // ===== Hotline : carrousel automatique des 3 numéros, en boucle =====
