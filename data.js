@@ -17,19 +17,6 @@ const FICHE_VIDE = {
 
 const DEFIS = [
   {
-    emoji: "🎲",
-    titre: "Onboarding Escape Game",
-    constat: "L'onboarding est un moment charnière dans la vie de tout WeFiiTer, qui se conclut par le passage du permis bateau. Mais c'est aussi une avalanche d'informations à digérer d'un coup.",
-    probleme: "Comment aider chaque nouveau WeFiiTer à s'approprier facilement les principaux éléments de notre culture dans ses premières semaines ?",
-    build: "Un escape game où chaque nouvel arrivant avance d'énigme en énigme pour découvrir la culture, les outils et l'équipe WeFiiT.",
-    fiche: Object.assign({}, FICHE_VIDE, {
-      utilisateurs: "Les nouveaux arrivants, pendant leurs premiers jours chez WeFiiT et avant la validation de leur permis bateau avec Yamila, et les managers ou RH qui les accueillent et veulent une intégration mémorable plutôt qu'une avalanche de slides.",
-      ressources: "La matière première des énigmes existe déjà : <a href=\"https://app.notion.com/p/wefiit/Ton-parcours-d-int-gration-26fe1ca090a9808aacc1dbf03e9d98f7\" target=\"_blank\" rel=\"noopener\">Ton parcours d'intégration</a> (Notion) et la <a href=\"https://wefiitcom.sharepoint.com/sites/MyWeFiiT/SitePages/Onboarding.aspx\" target=\"_blank\" rel=\"noopener\">section Onboarding de My WeFiiT</a> (SharePoint).",
-      piste: "Une chasse au trésor guidée : le nouvel arrivant avance d'énigme en énigme pour découvrir la culture, les outils et l'équipe WeFiiT.",
-      prompt: "On construit un escape game digital pour l'onboarding des nouveaux chez WeFiiT : une chasse au trésor où l'arrivant résout des énigmes sur la culture, les outils et les valeurs de l'entreprise pour « déverrouiller » son accès à l'équipe. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : les 3 énigmes clés d'une V1 jouable en 2h et par quoi commencer. J'utilise /plan, je valide, puis on code étape par étape."
-    })
-  },
-  {
     emoji: "🏆",
     titre: "Showroom WeFiiT",
     constat: "Chez WeFiiT, on produit de super livrables en mission : la présentation de Pauline chez Roole, la formation IA de Nils chez BPI, le hackathon de Baptiste chez LV… Mais tout ça dort dans des dossiers.",
@@ -40,6 +27,19 @@ const DEFIS = [
       ressources: "De quoi remplir la vitrine et calibrer la génération de contenu : les <a href=\"https://wefiitcom.sharepoint.com/:f:/s/TribeExpertises/IgDNK407IgLFQ5VRD1j-Y9J9AaPeWynZBsYXG8LcUeblIvE?e=6f7O02\" target=\"_blank\" rel=\"noopener\">formations réalisées chez les clients</a>, les <a href=\"https://wefiitcom.sharepoint.com/:f:/s/TribeExpertises/IgCoAzuvU8p3TpV_iOEC4DSrAa2rJFVJ1K1dgRbNkAUgiNw?e=l2B6xI\" target=\"_blank\" rel=\"noopener\">conférences, séminaires et REX inspirationnels</a>, et les <a href=\"https://wefiitcom.sharepoint.com/sites/INTERNALCOMMUNICATION/Documents%20partages/Contr%C3%B4le%20QA%20Notori%C3%A9t%C3%A9/Guidelines%20Blog%20WeFiiT.pdf\" target=\"_blank\" rel=\"noopener\">Guidelines Blog WeFiiT</a> pour écrire au bon ton.",
       piste: "L'app store des réalisations WeFiiT : chaque highlight s'affiche comme une app, avec sa vignette, ses tags et son impact — et un bouton génère le post LinkedIn ou l'article de blog qui le fait rayonner.",
       prompt: "On construit une vitrine des réalisations WeFiiT, façon Product Hunt : chaque réalisation (hackathon, conférence, formation, livrable marquant) s'affiche en carte avec vignette, tags (compétence, secteur) et impact, et un bouton génère un brouillon de post LinkedIn ou d'article de blog à partir du highlight. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : le modèle de données d'une carte, les 3 écrans essentiels et la génération de post pour une V1 en 2h. J'utilise /plan, je valide, puis on code."
+    })
+  },
+  {
+    emoji: "🎲",
+    titre: "Escape Game Onboarding",
+    constat: "L'onboarding est un moment charnière dans la vie de tout WeFiiTer, qui se conclut par le passage du permis bateau. Mais c'est aussi une avalanche d'informations à digérer d'un coup.",
+    probleme: "Comment aider chaque nouveau WeFiiTer à s'approprier facilement les principaux éléments de notre culture dans ses premières semaines ?",
+    build: "Un escape game où chaque nouvel arrivant avance d'énigme en énigme pour découvrir la culture, les outils et l'équipe WeFiiT.",
+    fiche: Object.assign({}, FICHE_VIDE, {
+      utilisateurs: "Les nouveaux arrivants, pendant leurs premiers jours chez WeFiiT et avant la validation de leur permis bateau avec Yamila, et les managers ou RH qui les accueillent et veulent une intégration mémorable plutôt qu'une avalanche de slides.",
+      ressources: "La matière première des énigmes existe déjà : <a href=\"https://app.notion.com/p/wefiit/Ton-parcours-d-int-gration-26fe1ca090a9808aacc1dbf03e9d98f7\" target=\"_blank\" rel=\"noopener\">Ton parcours d'intégration</a> (Notion) et la <a href=\"https://wefiitcom.sharepoint.com/sites/MyWeFiiT/SitePages/Onboarding.aspx\" target=\"_blank\" rel=\"noopener\">section Onboarding de My WeFiiT</a> (SharePoint).",
+      piste: "Une chasse au trésor guidée : le nouvel arrivant avance d'énigme en énigme pour découvrir la culture, les outils et l'équipe WeFiiT.",
+      prompt: "On construit un escape game digital pour l'onboarding des nouveaux chez WeFiiT : une chasse au trésor où l'arrivant résout des énigmes sur la culture, les outils et les valeurs de l'entreprise pour « déverrouiller » son accès à l'équipe. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : les 3 énigmes clés d'une V1 jouable en 2h et par quoi commencer. J'utilise /plan, je valide, puis on code étape par étape."
     })
   },
   {
