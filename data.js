@@ -56,19 +56,6 @@ const DEFIS = [
     })
   },
   {
-    emoji: "🧰",
-    titre: "Toolkit Agentique",
-    constat: "Chez WeFiiT, on a déjà le Toolkit du Consultant : le livrable qui centralise nos outils et nos méthodes de référence pour délivrer notre expertise product. L'enjeu : construire celui du consultant PM & QA augmenté.",
-    probleme: "Comment mutualiser et harmoniser les nombreux skills et agents créés par des WeFiiTers en mission, au sein d'une signature WeFiiT unique ?",
-    build: "Des skills et agents signature WeFiiT, reconnaissables, qui portent nos convictions et nos standards de qualité.",
-    fiche: Object.assign({}, FICHE_VIDE, {
-      utilisateurs: "Tous les consultants WeFiiT, au quotidien sur leurs missions, qui veulent des agents fiables et partagés plutôt que de bricoler les leurs dans leur coin. Le livrable attendu : les agents eux-mêmes, éprouvés et documentés, pas une plateforme.",
-      ressources: "De la matière première pour s'inspirer : le repo open source <a href=\"https://github.com/deanpeters/Product-Manager-Skills\" target=\"_blank\" rel=\"noopener\">Product Manager Skills</a> (une collection de skills IA pour PM, par Dean Peters), et le <a href=\"https://app.notion.com/p/wefiit/Le-Toolkit-du-consultant-d469abff78e4413f84777c4595645dd3?source=copy_link\" target=\"_blank\" rel=\"noopener\">Toolkit du consultant</a> dans Notion.",
-      piste: "Choisir un moment clé du métier PM ou QA (discovery, user stories, plan de test, campagne de tests…) et builder l'agent signature WeFiiT qui le couvre : un prompt soigné, testé sur un cas réel de mission, avec sa fiche d'usage (rôle, quand l'utiliser, exemple d'entrée/sortie).",
-      prompt: "On construit un agent signature WeFiiT pour un moment clé du métier PM ou QA (au choix : discovery, user stories, plan de test, campagne de tests…). Objectif : un agent éprouvé, avec son prompt système soigné, sa fiche d'usage (rôle, quand l'utiliser, exemple d'entrée/sortie) et un test sur un cas réel de mission. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : quel agent choisir, la structure de son prompt système et un scénario de test pour une V1 en 2h. J'utilise /plan, je valide, puis on code."
-    })
-  },
-  {
     emoji: "☕",
     titre: "We.Café",
     constat: "Chez WeFiiT, on se rencontre déjà dans nos cercles : les missions, les Tribes, la vie d'entreprise. Mais à 120 WeFiiTers, ça fait 119 rencontres possibles par personne.",
@@ -79,6 +66,18 @@ const DEFIS = [
       ressources: "Pour alimenter le matching : le <a href=\"https://wefiitcom-my.sharepoint.com/:x:/g/personal/yamila_dary_wefiit_com/IQAjQ79xtSjuTLHftdFjMG9TAeetqLxJPse0r32Z42H_D0c?e=sw2woO\" target=\"_blank\" rel=\"noopener\">fichier Excel avec la liste des WeFiiTers</a>, les <a href=\"https://wefiitcom.sharepoint.com/:f:/s/WeFiiT/IgC3sroBnjrzRZ0RZHz_YOteARFQVo9A1IVgZ0XjJVf2ecU?e=qqLV9h\" target=\"_blank\" rel=\"noopener\">bios des WeFiiTers</a> et les <a href=\"https://wefiitcom.sharepoint.com/:f:/s/WeFiiT/IgD0f146WCTTQ5m02CB0TkWkAdF9wgHpPILX7Fqmpf_XcCI?e=LStteb\" target=\"_blank\" rel=\"noopener\">photos Teams des WeFiiTers</a>.",
       piste: "Une app de matching : deux WeFiiTers qui ne se croisent pas (autre Tribe, autre client, autre étage) sont mis en relation pour partager un café, selon leurs envies et leurs disponibilités.",
       prompt: "On construit une app de matching We.Café : elle met en relation deux WeFiiTers qui ne se croisent pas (autre Tribe, autre client, autre étage) pour partager un café, un thé ou un matcha, selon leurs envies et leurs disponibilités. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : le modèle de données (profil, Tribe, client, dispo, match) et les 3 fonctionnalités d'une V1 en 2h. J'utilise /plan, je valide, puis on code."
+    })
+  },
+  {
+    emoji: "🖼️",
+    titre: "Brief Augmenté",
+    constat: "Notre brief consultant sert à la fois notre montée en valeur et notre différenciation IA. Mais aujourd'hui, il fait 7 à 10 pages avec un template générique qui ne porte ni l'un ni l'autre.",
+    probleme: "Comment faire de notre brief un vrai levier de notre montée en valeur et de notre différenciation IA ?",
+    build: "Un template plus compact, intégrant nos compétences IA, avec des déclinaisons personnalisées par compétence.",
+    fiche: Object.assign({}, FICHE_VIDE, {
+      utilisateurs: "Les consultants qui préparent leur brief avant une mission ou un entretien client, et les PADs qui les présentent aux clients.",
+      piste: "Un générateur de brief avec score de lisibilité : l'IA rédige le brief et un indicateur pousse à le garder court et percutant.",
+      prompt: "On construit une plateforme pour créer le brief d'un consultant WeFiiT : l'IA aide à rédiger, met en avant l'impact et les compétences IA, avec un design épuré et un score de lisibilité qui pousse à rester court. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : les champs du brief et les 3 fonctionnalités d'une V1 en 2h. J'utilise /plan, je valide, puis on code."
     })
   }
 ];
