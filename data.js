@@ -76,6 +76,7 @@ const DEFIS = [
     build: "Un template plus compact, intégrant nos compétences IA, avec des déclinaisons personnalisées par compétence.",
     fiche: Object.assign({}, FICHE_VIDE, {
       utilisateurs: "Les consultants qui préparent leur brief avant une mission ou un entretien client, et les PADs qui les présentent aux clients.",
+      ressources: "Pour partir du réel : des <a href=\"https://wefiitcom.sharepoint.com/:f:/s/WeFiiT/IgD2BYDEcps8QqnHnCECCt-kAd96Sn7LWZDWJg-BjsaavQU?e=QKUj8x\" target=\"_blank\" rel=\"noopener\">exemples de briefs</a>.",
       piste: "Un générateur de brief avec score de lisibilité : l'IA rédige le brief et un indicateur pousse à le garder court et percutant.",
       prompt: "On construit une plateforme pour créer le brief d'un consultant WeFiiT : l'IA aide à rédiger, met en avant l'impact et les compétences IA, avec un design épuré et un score de lisibilité qui pousse à rester court. Stack : Claude, GitHub, Supabase. Avant de coder, propose-moi un plan : les champs du brief et les 3 fonctionnalités d'une V1 en 2h. J'utilise /plan, je valide, puis on code."
     })
