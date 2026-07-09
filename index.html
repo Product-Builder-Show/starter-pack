@@ -343,7 +343,6 @@
     .diapo .haut { margin-bottom: 24px; }
     .diapo .constat { margin-bottom: 24px; }
     .diapo .colonnes { gap: 22px; }
-    .commandes { bottom: auto; top: calc(100% + 16px); position: static; margin-top: 16px; }
   }
   /* Pagination intégrée en bas de la carte, superposée à l'écran */
   .commandes {
@@ -355,6 +354,14 @@
   .points { display: flex; gap: 9px; }
   .point { width: 9px; height: 9px; border-radius: 50%; background: rgba(255,255,255,0.2); cursor: pointer; border: none; padding: 0; transition: background .25s, transform .25s; }
   .point.actif { background: var(--orange); transform: scale(1.3); }
+  /* Mobile : pagination sortie de la carte (sous le carrousel, fond blanc), couleurs adaptées.
+     Ce bloc doit rester APRÈS les règles de base, sinon elles reprennent la main. */
+  @media (max-width: 640px) {
+    .commandes { position: static; margin-top: 14px; }
+    .compteur { color: #5a6690; }
+    .compteur .cur { color: var(--marine); }
+    .point { width: 10px; height: 10px; background: rgba(0,40,130,0.18); }
+  }
   .indice-clavier { text-align: center; margin-top: 18px; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(154,168,216,0.55); }
 
   /* ===== ÉQUIPES : le générique ===== */
